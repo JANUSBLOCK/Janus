@@ -15,7 +15,7 @@ void delete_pointed_to(T* const ptr)
 
 void form_quorums(std::vector<std::shared_ptr<Quorum>>& the_quorums, std::vector<std::vector<std::shared_ptr<Node>>>& q_pools, std::string& prev_block_hash, int & mal_quorums);
 
-int get_quorum_size(const int& network_size);
+int get_quorum_size(const int& network_size); 
 
 void increment_entity_ids(std::vector<std::vector<Node* >>& all_nodes);
 
