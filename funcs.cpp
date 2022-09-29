@@ -76,6 +76,10 @@ void form_quorums(std::vector<std::shared_ptr<Quorum>>& the_quorums, std::vector
 
 }
 
+int get_quorum_size(const int& network_size)
+{
+	return (int)std::ceil(std::log(network_size / 2));
+}
 
 void increment_entity_ids(std::vector<std::vector<Node* >> &all_nodes)
 {
